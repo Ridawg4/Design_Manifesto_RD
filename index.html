@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riley Dillon | Design Portfolio</title>
+  <meta name="description" content="Online portfolio and design manifesto." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="dot"></span>
+        <strong>Riley Dillon</strong>
+      </a>
+      <nav class="links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="kicker">HCI / UX Design Portfolio</p>
+      <h1>Designing interfaces that make sense the first time.</h1>
+      <p class="sub">
+        This portfolio brings together my semester work, demonstrating my design
+        process through research, prototyping, evaluation, and iteration.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#portfolio">View Projects</a>
+        <a class="btn" href="#manifesto">Design Manifesto</a>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <p class="lead">
+        Each project is presented as a case study with methods, findings,
+        and resulting design decisions.
+      </p>
+
+      <div class="projects">
+
+        <article class="card proj">
+          <header>
+            <h3>Project 1 — Interface Redesign</h3>
+            <div class="meta">
+              <span class="pill">User Research</span>
+              <span class="pill">Sketching</span>
+              <span class="pill">Prototyping</span>
+            </div>
+          </header>
+          <div class="in">
+            <p><b>Problem:</b> Users struggled to understand the primary workflow.</p>
+            <p><b>Goal:</b> Improve clarity and task completion.</p>
+
+            <div class="kv">
+              <div><b>Methods</b></div>
+              <div>Contextual inquiry, sketches, usability testing</div>
+
+              <div><b>Key Findings</b></div>
+              <div>Users missed key actions and system feedback.</div>
+
+              <div><b>Design Decisions</b></div>
+              <div>Simplified layout and clearer visual hierarchy.</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section id="manifesto" class="section">
+      <h2>Design Manifesto</h2>
+      <p class="lead">
+        These principles define how I approach design problems and make decisions.
+      </p>
+
+      <div class="manifesto">
+
+        <article class="card point">
+          <div class="in">
+            <h3>1. Evidence Over Assumptions</h3>
+            <p>
+              Design decisions should be driven by observation, testing,
+              and user feedback rather than personal preference.
+            </p>
+          </div>
+        </article>
+
+        <article class="card point">
+          <div class="in">
+            <h3>2. Clarity Is Essential</h3>
+            <p>
+              Interfaces should communicate purpose and next steps
+              without requiring explanation.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <h2>My Design Process</h2>
+
+      <article class="card">
+        <div class="in">
+          <div class="kv">
+            <div><b>Define</b></div><div>Identify users, goals, and constraints.</div>
+            <div><b>Research</b></div><div>Gather evidence through observation.</div>
+            <div><b>Prototype</b></div><div>Explore ideas quickly and cheaply.</div>
+            <div><b>Evaluate</b></div><div>Test with real users and heuristics.</div>
+            <div><b>Iterate</b></div><div>Refine based on findings.</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <article class="card">
+        <div class="in">
+          <p>Email: yourname@email.com</p>
+          <p>GitHub: github.com/yourname</p>
+          <p>LinkedIn: linkedin.com/in/yourname</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Riley Dillon</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
