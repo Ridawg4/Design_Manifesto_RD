@@ -4,12 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Riley Dillon | Design Portfolio</title>
-  <meta name="description" content="Online portfolio and design manifesto." />
+  <meta name="description" content="Design portfolio and manifesto for CS-257." />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- NAV -->
+
+  <!-- NAVIGATION -->
   <header class="nav">
     <div class="nav-inner">
       <a class="brand" href="#top">
@@ -17,7 +18,7 @@
         <strong>Riley Dillon</strong>
       </a>
       <nav class="links">
-        <a href="#portfolio">Portfolio</a>
+        <a href="#portfolio">Projects</a>
         <a href="#manifesto">Manifesto</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
@@ -29,11 +30,11 @@
 
     <!-- HERO -->
     <section class="hero">
-      <p class="kicker">HCI / UX Design Portfolio</p>
-      <h1>Designing interfaces that make sense the first time.</h1>
+      <p class="kicker">CS-257 • Human-Centered Design</p>
+      <h1>Designing for clarity, usability, and real user needs.</h1>
       <p class="sub">
-        This portfolio brings together my semester work, demonstrating my design
-        process through research, prototyping, evaluation, and iteration.
+        This portfolio brings together my semester-long design work, demonstrating
+        how research, evaluation, and iteration shape better interfaces.
       </p>
 
       <div class="cta">
@@ -42,206 +43,65 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
+    <!-- PROJECTS -->
     <section id="portfolio" class="section">
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
       <p class="lead">
-        Each project is presented as a case study with methods, findings,
-        and resulting design decisions.
+        Each project links to a full design document outlining the problem,
+        process, findings, and reflections.
       </p>
 
-      <div class="projects">
+      <div class="projects simple-projects">
 
-        <article class="card proj" id="grand-slam-grill">
-            <header>
-              <h3>Grand Slam Grill Mobile Ordering Redesign</h3>
-              <div class="meta">
-                <span class="pill">Contextual Inquiry</span>
-                <span class="pill">Sketching</span>
-                <span class="pill">Heuristic Evaluation</span>
-                <span class="pill">Thinking Aloud</span>
-                <span class="pill">Figma</span>
-              </div>
-            </header>
-          
-            <div class="in">
-              <p><b>Problem:</b> The original Grand Slam Grill website was difficult to use on mobile, with unclear hierarchy, inconsistent spacing, and poor discoverability for ordering actions.</p>
-          
-              <p><b>Goal:</b> Design a mobile-first ordering experience that is visually clear, efficient, and aligned with the restaurant’s brand identity.</p>
-          
-              <p><b>My Role:</b> Lead designer and researcher; responsible for sketching, prototyping in Figma, user testing, and redesign iteration.</p>
-          
-              <div class="kv">
-                <div><b>Methods</b></div>
-                <div>
-                  Contextual analysis of existing site, messy and refined sketching, heuristic evaluation (NN/g),
-                  thinking-aloud testing with peers, iterative Figma prototyping
-                </div>
-          
-                <div><b>Key Findings</b></div>
-                <div>
-                  <ul class="tight">
-                    <li>Users were unsure where their order was stored during the flow.</li>
-                    <li>Primary actions lacked visual hierarchy and consistent placement.</li>
-                    <li>Spacing and contrast issues made scanning menus harder on mobile.</li>
-                  </ul>
-                </div>
-          
-                <div><b>Design Decisions</b></div>
-                <div>
-                  <ul class="tight">
-                    <li>Introduced a clearer header hierarchy and unified “Add to Order” buttons.</li>
-                    <li>Added a persistent bottom navigation (Home, Menu, Order).</li>
-                    <li>Adjusted spacing, alignment, and contrast using Szafir’s perceptual guidance.</li>
-                  </ul>
-                </div>
-          
-                <div><b>Outcome</b></div>
-                <div>
-                  The redesign reduced confusion, improved task clarity, and shifted the design focus
-                  from adding features to supporting real user goals.
-                </div>
-              </div>
-          
-              <div class="proj-links">
-                <a class="small" href="https://www.figma.com/design/zDKzibxkJ2GA89B9Em9Nnr/CS257-Lab" target="_blank">Original Prototype</a>
-                <a class="small" href="https://www.figma.com/design/zDKzibxkJ2GA89B9Em9Nnr/CS257-Lab?node-id=46-210" target="_blank">Redesign Prototype</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card proj" id="design-for-understanding">
-            <header>
-              <h3>Design for Understanding: NFL Ticket Price Visualizations</h3>
-              <div class="meta">
-                <span class="pill">Data Visualization</span>
-                <span class="pill">Five Design-Sheet Process</span>
-                <span class="pill">Tableau</span>
-                <span class="pill">Vega-Lite</span>
-              </div>
-            </header>
-          
-            <div class="in">
-              <p><b>Problem:</b> Raw ticket price data does not clearly communicate league-wide patterns or comparisons without thoughtful visual encoding.</p>
-          
-              <p><b>Goal:</b> Create both clear and persuasive visualizations that communicate ticket price differences accurately and memorably.</p>
-          
-              <p><b>My Role:</b> Designer and analyst; responsible for sketching, visualization design, implementation, and evaluation.</p>
-          
-              <div class="kv">
-                <div><b>Methods</b></div>
-                <div>
-                  Dataset analysis, Five Design-Sheet process, Tableau dashboards, Vega-Lite map design,
-                  informal prototype testing
-                </div>
-          
-                <div><b>Key Findings</b></div>
-                <div>
-                  <ul class="tight">
-                    <li>Clear visualizations supported accurate comparison but lacked emotional impact.</li>
-                    <li>Persuasive visualizations were more memorable but risked exaggeration.</li>
-                    <li>Color gradients strongly influenced perception and bias.</li>
-                  </ul>
-                </div>
-          
-                <div><b>Design Decisions</b></div>
-                <div>
-                  <ul class="tight">
-                    <li>Used perceptually uniform gradients informed by Szafir’s research.</li>
-                    <li>Separated designs into “Clear” and “Persuasive” sets for different goals.</li>
-                    <li>Adjusted low-value color ranges to improve readability.</li>
-                  </ul>
-                </div>
-          
-                <div><b>Outcome</b></div>
-                <div>
-                  This project highlighted the tradeoff between clarity and persuasion and reinforced
-                  the responsibility designers have when framing data.
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="card proj" id="wsbu-radio">
-            <header>
-              <h3>Design for Collaboration: WSBU 88.3 FM Mobile App</h3>
-              <div class="meta">
-                <span class="pill">Mobile UX</span>
-                <span class="pill">Sketching</span>
-                <span class="pill">Usability Testing</span>
-                <span class="pill">Figma</span>
-              </div>
-            </header>
-          
-            <div class="in">
-              <p><b>Problem:</b> The existing WSBU website did not support mobile listening well and fragmented audio, news, and engagement features.</p>
-          
-              <p><b>Goal:</b> Design a mobile-first experience centered on continuous listening and easy content discovery.</p>
-          
-              <p><b>My Role:</b> Co-designer and researcher; responsible for sketching, prototyping, and usability testing.</p>
-          
-              <div class="kv">
-                <div><b>Methods</b></div>
-                <div>
-                  Competitive analysis, low-fidelity sketching, Figma prototyping,
-                  informal usability testing, iterative refinement
-                </div>
-          
-                <div><b>Key Findings</b></div>
-                <div>
-                  <ul class="tight">
-                    <li>Users strongly valued uninterrupted audio playback.</li>
-                    <li>Navigation clarity improved when audio controls remained persistent.</li>
-                    <li>Button size and spacing affected confidence when tapping.</li>
-                  </ul>
-                </div>
-          
-                <div><b>Design Decisions</b></div>
-                <div>
-                  <ul class="tight">
-                    <li>Implemented a persistent mini-player across all screens.</li>
-                    <li>Unified visual language across Home, Player, and News screens.</li>
-                    <li>Increased tap targets and spacing based on feedback.</li>
-                  </ul>
-                </div>
-          
-                <div><b>Outcome</b></div>
-                <div>
-                  The final design felt more like a real radio experience and aligned
-                  more closely with actual listener behavior.
-                </div>
-              </div>
-          
-              <div class="proj-links">
-                <a class="small" href="https://www.figma.com/design/AEi9jeyxlj4ySPvwUuQ5ur/CS-257-Design-For-Collaboration" target="_blank">Figma Prototype</a>
-              </div>
-            </div>
-          </article>
-
-        
-        <article class="card proj">
-          <header>
-            <h3>Project 1 — Interface Redesign</h3>
-            <div class="meta">
-              <span class="pill">User Research</span>
-              <span class="pill">Sketching</span>
-              <span class="pill">Prototyping</span>
-            </div>
-          </header>
+        <article class="card proj-link">
           <div class="in">
-            <p><b>Problem:</b> Users struggled to understand the primary workflow.</p>
-            <p><b>Goal:</b> Improve clarity and task completion.</p>
+            <h3>Grand Slam Grill — Mobile Ordering Design</h3>
+            <p>
+              Mobile-first ordering interface designed through sketching,
+              usability testing, and iterative prototyping.
+            </p>
+            <a class="btn primary" href="Designing for Different Dimensions and Others (1).pdf" target="_blank">
+              View Project PDF
+            </a>
+          </div>
+        </article>
 
-            <div class="kv">
-              <div><b>Methods</b></div>
-              <div>Contextual inquiry, sketches, usability testing</div>
+        <article class="card proj-link">
+          <div class="in">
+            <h3>Design for Understanding — NFL Ticket Prices</h3>
+            <p>
+              Data visualization project exploring clarity versus persuasion
+              using Tableau and Vega-Lite.
+            </p>
+            <a class="btn primary" href="Design for Understanding.pdf" target="_blank">
+              View Project PDF
+            </a>
+          </div>
+        </article>
 
-              <div><b>Key Findings</b></div>
-              <div>Users missed key actions and system feedback.</div>
+        <article class="card proj-link">
+          <div class="in">
+            <h3>Design for Collaboration — WSBU Radio App</h3>
+            <p>
+              Mobile app redesign supporting continuous listening and
+              collaborative radio use.
+            </p>
+            <a class="btn primary" href="Design for Collaberation (3) (2).pdf" target="_blank">
+              View Project PDF
+            </a>
+          </div>
+        </article>
 
-              <div><b>Design Decisions</b></div>
-              <div>Simplified layout and clearer visual hierarchy.</div>
-            </div>
+        <article class="card proj-link">
+          <div class="in">
+            <h3>Grand Slam Grill — Iterative Redesign</h3>
+            <p>
+              Redesign using heuristic evaluation and thinking-aloud testing
+              to simplify navigation and ordering flows.
+            </p>
+            <a class="btn primary" href="CS-Redesign (2).pdf" target="_blank">
+              View Project PDF
+            </a>
           </div>
         </article>
 
@@ -252,27 +112,57 @@
     <section id="manifesto" class="section">
       <h2>Design Manifesto</h2>
       <p class="lead">
-        These principles define how I approach design problems and make decisions.
+        These principles summarize how my design approach developed over the semester.
       </p>
 
       <div class="manifesto">
 
-        <article class="card point">
+        <article class="card">
           <div class="in">
             <h3>1. Evidence Over Assumptions</h3>
             <p>
-              Design decisions should be driven by observation, testing,
-              and user feedback rather than personal preference.
+              Design decisions should be guided by observation and testing rather
+              than personal intuition.
             </p>
           </div>
         </article>
 
-        <article class="card point">
+        <article class="card">
           <div class="in">
-            <h3>2. Clarity Is Essential</h3>
+            <h3>2. Clarity Is a Feature</h3>
             <p>
-              Interfaces should communicate purpose and next steps
+              Interfaces should communicate purpose and next steps immediately,
               without requiring explanation.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="in">
+            <h3>3. Iteration Is Essential</h3>
+            <p>
+              Revisiting and refining designs reveals problems that are invisible
+              in initial drafts.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="in">
+            <h3>4. Tradeoffs Are Inevitable</h3>
+            <p>
+              Every design balances clarity, persuasion, effort, and context.
+              Recognizing tradeoffs is part of responsible design.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="in">
+            <h3>5. Not Every Problem Needs Design</h3>
+            <p>
+              Sometimes the best solution is simplifying or removing technology
+              altogether.
             </p>
           </div>
         </article>
@@ -287,11 +177,12 @@
       <article class="card">
         <div class="in">
           <div class="kv">
-            <div><b>Define</b></div><div>Identify users, goals, and constraints.</div>
-            <div><b>Research</b></div><div>Gather evidence through observation.</div>
-            <div><b>Prototype</b></div><div>Explore ideas quickly and cheaply.</div>
-            <div><b>Evaluate</b></div><div>Test with real users and heuristics.</div>
-            <div><b>Iterate</b></div><div>Refine based on findings.</div>
+            <div><b>Define</b></div><div>Understand users, goals, and constraints.</div>
+            <div><b>Research</b></div><div>Observe real behavior and pain points.</div>
+            <div><b>Sketch</b></div><div>Explore ideas quickly and cheaply.</div>
+            <div><b>Prototype</b></div><div>Build interactive representations.</div>
+            <div><b>Evaluate</b></div><div>Test with users and heuristics.</div>
+            <div><b>Iterate</b></div><div>Refine based on evidence.</div>
           </div>
         </div>
       </article>
@@ -312,10 +203,12 @@
     <footer>
       <p>© <span id="year"></span> Riley Dillon</p>
     </footer>
+
   </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>

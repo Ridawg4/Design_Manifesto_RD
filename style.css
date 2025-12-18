@@ -177,3 +177,18 @@
     text-align: center;
   }
   
+  .simple-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .proj-link h3{
+    margin-top: 0;
+  }
+  
+  .proj-link p{
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  
